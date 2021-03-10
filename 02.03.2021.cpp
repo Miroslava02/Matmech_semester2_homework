@@ -6,9 +6,6 @@ struct cArray {
 	int* data;
 	size_t size;
 	cArray(size_t N) {
-		if (data) {
-			delete[] data;
-		}
 		size = N;
 		data = new int[size];
 	}
@@ -16,6 +13,9 @@ struct cArray {
 		delete[] data;
 	}
 	cArray(const cArray& A) {
+		if (data) {
+			delete[] data;
+		}
 		size = A.size;
 		data = new int[size];
 		for (int i = 0; i < size; i++) {
