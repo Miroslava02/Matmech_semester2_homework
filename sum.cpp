@@ -19,6 +19,7 @@ int main(){
     ifstream in("C:\\Users\\Мирослава\\OneDrive\\Документы\\input.txt");
     if (in.is_open())
     {
+        cout<<"hello world";
         while (in>>a>>b)
         {
            A.push_back(a);
