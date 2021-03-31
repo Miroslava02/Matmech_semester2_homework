@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -16,7 +15,7 @@ int main(){
     int a, b, a1, b1;
     int line;
     vector <int> A, B;
-    ifstream in("C:\\Users\\Мирослава\\OneDrive\\Документы\\input.txt");
+    ifstream in("C:\\ssss\\input.txt");
     if (in.is_open())
     {
         cout<<"hello world";
@@ -36,3 +35,4 @@ int main(){
     system("PAUSE");  
     return 0;
 }
+
