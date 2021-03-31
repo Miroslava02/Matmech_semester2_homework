@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -21,7 +22,9 @@ int main(){
         while (in>>a>>b)
         {
            A.push_back(a);
+           cout<<a;
            B.push_back(b);
+           cout<<b;
            
         }
     }
