@@ -13,7 +13,7 @@ using namespace std;
 __global__ void add(int* a, int* b, int* c)
 {
 	//вычисление индекса элемента
-	double tid = threadIdx.x;
+	int tid = threadIdx.x;
 	//проверка на выход за пределы массива
 	if (tid > N - 1) return;
 	//поэлементное сложение массивов
